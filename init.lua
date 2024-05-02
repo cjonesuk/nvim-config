@@ -1,3 +1,12 @@
+--[[
+TODO:
+
+Github Copilot
+Prettier
+
+]]
+--
+
 -- Set <space> as the leader key
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
@@ -576,7 +585,10 @@ require("lazy").setup({
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter
 				-- is found.
-				-- javascript = { { "prettierd", "prettier" } },
+				javascript = { { "prettierd", "prettier" } },
+				javascriptreact = { { "prettierd", "prettier" } },
+				typescript = { { "prettierd", "prettier" } },
+				typescriptreact = { { "prettierd", "prettier" } },
 			},
 		},
 	},
@@ -792,6 +804,13 @@ require("lazy").setup({
 		"pmizio/typescript-tools.nvim",
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		opts = {},
+	},
+
+	-- Add in Github Copilot
+	{
+		"github/copilot.vim",
+		opts = {},
+		config = function(_, opts) end,
 	},
 
 	-- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
