@@ -14,3 +14,7 @@ require("telescope").setup {
   
 pcall(require("telescope").load_extension, "fzf")
 pcall(require("telescope").load_extension, "smart_history")
+
+local builtin = require "telescope.builtin"
+
+local set = vim.keymap.set
