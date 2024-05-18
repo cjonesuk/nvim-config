@@ -3,7 +3,7 @@
 -- 
 -- Primarily just download and execute lazy.nvim
 --]]
-vim.g.mapleader = " "
+vim.g.mapleader = ","
 
 
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
