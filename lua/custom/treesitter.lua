@@ -3,13 +3,14 @@ require("nvim-treesitter.configs").setup {
         "c_sharp",
         "css",
         "html",
-        "javascript",
+        "javascript", 
         "json",
         "lua", 
         "markdown",
         "python", 
         "rust", 
-        "typescript",
+        "typescript", 
+        "tsx"
     },
     highlight = {
         enable = true,
