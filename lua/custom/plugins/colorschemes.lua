@@ -1,19 +1,7 @@
-local nordic  = {
-    "AlexvZyl/nordic.nvim",
-    lazy = false,
-    priority = 1000
-}
-
-return {
-    {
-        "tjdevries/colorbuddy.nvim",
-        lazy = false,
-        priority = 1000,
-        dependencies = { 
-            nordic
-        },
-        config = function ()
-            require "custom.colorscheme"
-        end,
-    }
+return {  
+    'folke/tokyonight.nvim',
+    priority = 1000, -- Make sure to load this before all the other start plugins.
+    init = function()
+        require "custom.colorscheme"
+    end
 }
