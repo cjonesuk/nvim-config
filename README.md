@@ -17,3 +17,4 @@ config: ~/.config/nvim
 - Linting
 - Prettier
 - Code formatting
+- https://github.com/pmizio/typescript-tools.nvim
